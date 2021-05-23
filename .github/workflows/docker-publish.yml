@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
 jobs:
   build:
       runs-on: ubuntu-latest
@@ -11,12 +10,12 @@ jobs:
       steps:
           - name: Checkout master
             uses: actions/checkout@master
-          - name: ACK login
+          - name: ACR login
             env:
               DOCKER_PWD: ${{ secrets.ACR_PWD }}
               DOCKER_USER: ${{ secrets.ACR_USER }}
             run: |
-              echo "${DOCKER_PWD}" | docker login --username ${DOCKER_USER} --password-stdin
+              echo "${DOCKER_PWD}" | docker login --username ${DOCKER_USER} --password-stdin  registry.cn-hangzhou.aliyuncs.com
           - name: docker buildx
             id: buildx
             uses: crazy-max/ghaction-docker-buildx@v1
