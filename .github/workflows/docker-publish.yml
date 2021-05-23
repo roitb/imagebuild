@@ -12,8 +12,8 @@ jobs:
             uses: actions/checkout@master
           - name: ACK login
             env:
-              DOCKER_PWD: ${{ secrets.ACK_PWD }}
-              DOCKER_USER: ${{ secrets.ACK_USER }}
+              DOCKER_PWD: ${{ secrets.ACR_PWD }}
+              DOCKER_USER: ${{ secrets.ACR_USER }}
             run: |
               echo "${DOCKER_PWD}" | docker login --username ${DOCKER_USER} --password-stdin
           - name: docker buildx
