@@ -1,1 +1,1 @@
-FROM k8s.gcr.io/kubernetes-zookeeper:1.0-3.4.10
+FROM gcr.io/google_containers/kubernetes-kafka:1.0-10.2.1
