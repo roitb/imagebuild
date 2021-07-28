@@ -1,1 +1,1 @@
-FROM gcr.io/google_containers/kubernetes-kafka:1.0-10.2.1
+FROM k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2
