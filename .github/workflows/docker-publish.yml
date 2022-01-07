@@ -9,7 +9,7 @@ jobs:
       name: Build image job
       steps:
           - name: Checkout master
-            uses: actions/checkout@build
+            uses: actions/checkout@master
           - name: ACR login
             env:
               DOCKER_PWD: ${{ secrets.ACR_PWD }}
