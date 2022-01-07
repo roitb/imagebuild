@@ -2,14 +2,14 @@ name: Build Amd64 Image
 on:
   push:
     branches:
-      - master
+      - build
 jobs:
   build:
       runs-on: ubuntu-latest
       name: Build image job
       steps:
           - name: Checkout master
-            uses: actions/checkout@master
+            uses: actions/checkout@build
           - name: ACR login
             env:
               DOCKER_PWD: ${{ secrets.ACR_PWD }}
@@ -26,9 +26,16 @@ jobs:
             env: 
               DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
             run: |
-              docker buildx build \
-              --platform=linux/amd64,linux/arm/v7,linux/arm64 \
-              --output "type=image,push=true" \
-              --file ./Dockerfile . \
-              --tag registry.cn-hangzhou.aliyuncs.com/yuxf/owner:latest --tag yuxff/owner:latest
-              
+          - name: build dockerfile with push
+            env:
+              DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+            run: |
+              for image in $(<image.list);do 
+                if [[ $image =~ ^\#.* ]];then   
+                  continue;
+                fi
+                echo $image
+                docker pull $image
+                docker tag $image registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/}
+                docker push registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/}
+              done
