@@ -36,6 +36,6 @@ jobs:
                 fi
                 echo $image
                 docker pull $image
-                docker tag $image registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/}
-                docker push registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/}
+                docker tag $image registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/} || continue
+                docker push registry.cn-hangzhou.aliyuncs.com/yuxf/${image##*/} || continue
               done
