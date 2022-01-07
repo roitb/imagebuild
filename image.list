@@ -6,7 +6,6 @@ gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.31.0
 gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.31.0
 gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.31.0
 gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.31.0
-gcr.io/google.com/cloudsdktool/cloud-sdk@sha256:27b2c22bf259d9bc1a291e99c63791ba0c27a04d2db0a43241ba0f1f20
-f4067f
-gcr.io/distroless/base@sha256:cfdc553400d41b47fd231b028403469811fcdbc0e69d66ea8030c5a0b5fbac2b
+gcr.io/google.com/cloudsdktool/cloud-sdk
+gcr.io/distroless/base
 #mcr.micros
