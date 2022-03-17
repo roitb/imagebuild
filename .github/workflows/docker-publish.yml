@@ -1,7 +1,8 @@
 name: Build Amd64 Image
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - build
 jobs:
   build:
       runs-on: ubuntu-latest
@@ -9,24 +10,24 @@ jobs:
       steps:
           - name: Checkout master
             uses: actions/checkout@master
-          - name: ACK login
+          - name: ACR login
             env:
-              DOCKER_PWD: ${{ secrets.ACK_PWD }}
-              DOCKER_USER: ${{ secrets.ACK_USER }}
+              DOCKER_PWD: ${{ secrets.ACR_PWD }}
+              DOCKER_USER: ${{ secrets.ACR_USER }}
             run: |
-              echo "${DOCKER_PWD}" | docker login --username ${DOCKER_USER} --password-stdin
-          - name: docker buildx
-            id: buildx
-            uses: crazy-max/ghaction-docker-buildx@v1
-            with:
-              buildx-version: latest
+              echo "${DOCKER_PWD}" | docker login --username ${DOCKER_USER} --password-stdin  registry.cn-hangzhou.aliyuncs.com
+              echo "abc@12311" | docker login --username yuxff --password-stdin  
           - name: build dockerfile with push
-            env: 
+            env:
               DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
             run: |
-              docker buildx build \
-              --platform=linux/amd64,linux/arm/v7,linux/arm64 \
-              --output "type=image,push=true" \
-              --file ./Dockerfile . \
-              --tag registry.cn-hangzhou.aliyuncs.com/yuxf/owner:latest
-              
+              for image in $(<image.list);do 
+                if [[ $image =~ ^\#.* ]];then   
+                  continue;
+                fi
+                echo $image
+                docker pull $image
+                reimage=`echo ${image##*/} | awk -F@ '{print $1}'`
+                docker tag $image registry.cn-hangzhou.aliyuncs.com/yuxf/${reimage} || continue
+                docker push registry.cn-hangzhou.aliyuncs.com/yuxf/${reimage} || continue
+              done
