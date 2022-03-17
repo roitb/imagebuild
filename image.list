@@ -1,4 +1,3 @@
-gcr.io/authenticated-image-pulling/alpine:3.7
 gcr.io/authenticated-image-pulling/windows-nanoserver:v1
 gcr.io/google-containers/startup-script:v1
 gcr.io/k8s-authenticated-test/agnhost:2.6
