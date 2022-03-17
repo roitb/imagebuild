@@ -1,12 +1,1 @@
-#gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.23.0
-#gcr.io/distroless/base:debug
-#k8s.gcr.io/node-problem-detector/node-problem-detector:v0.8.10
-gcr.io/knative-releases/knative.dev/net-kourier/cmd/kourier@sha256:15b60b48a85d15490f1836585c01eb939dc468727e375585e66ff4646a2c6cfc
-docker.io/envoyproxy/envoy:v1.18-latest
-gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:96977f1a6618e3aa6c6a4ee421da2d3693794f9bd18be3b057a802830e0b9180
-gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:2bd3c199ce1a176ae7eec269a3b06319369cbbfbf4d1eba7965e014ccc7bc607
-gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:f0b24c15d41ba0c312aec290ecb5edb9ab5146317043ed71512c032faf34e75e
-gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:6a686b1ed7aa145c00c90c543848fed6119647d2071759c5eebe4c2b29eeaea0
-gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping@sha256:4fab9aa8a2e0300ca25782b3e78213ee0fdb717bb55d2cc4f67a9a041775cbfe
-gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping-webhook@sha256:c8a79d608d3e2f2b0d654043584c306e589954477dfd7923ac0b7585bd3980f6
-gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:7e76260703b2ef866f178e6de196fba5b6125fc34182352a8ad10d3e357e0e59
+k8s.gcr.io/conformance:v1.18.3
