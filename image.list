@@ -6,3 +6,5 @@ gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping@sha256:5f9d8293f8
 gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping-webhook@sha256:51800b3435af2cd551f7de5119133de3cb30e3d72ec9df18d5e2e14ec482668f
 gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:881a707c3f5b8537adf1fd460405fb8e65ae2676e4591926f9cdfb4454efd350
 gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:c9dcb1610c99fab4caa39b972f6ce4defa2bdc4ab5c502cc1759f6aa89c34e02
+gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler-hpa@sha256:49a5b018d2b199bbd81b06bc618463e4ebabb68827bad5a147f613ebbfa579f9
+gcr.io/knative-releases/knative.dev/net-kourier/cmd/kourier@sha256:84af1fba93bcc1d504ee6fc110a49be80440f08d461ccb0702621b7b62d0
