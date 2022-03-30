@@ -1,2 +1,3 @@
-gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_controller@sha256:2d190ed5f7ff656715a75027337a8aeb19315558f3387b8b7b6109023a0e66c4
-gcr.io/knative-releases/knative.dev/eventing/cmd/in_memory/channel_dispatcher@sha256:ee78f8c32fd82b71d740c4879c82b315e70711ba97ad2b7244d0e5fff66ae2a4
+k8s.gcr.io/conformance:1.19.16-r1.0.2.9
+sonobuoy/sonobuoy:v0.56.3
+sonobuoy/systems-logs:v0.4
