@@ -22,6 +22,5 @@ gcr.io/kubernetes-e2e-test-images/ipc-utils:1.0
 gcr.io/kubernetes-e2e-test-images/kitten:1.0
 gcr.io/kubernetes-e2e-test-images/nonewprivs:1.0
 gcr.io/kubernetes-e2e-test-images/volume/iscsi:2.0
-gcr.io/k8s-authenticated-test/agnhost:2.6
 k8s.gcr.io/e2e-test-images/metadata-concealment:1.6
 gcr.io/kubernetes-e2e-test-images/cuda-vector-add:1.0
