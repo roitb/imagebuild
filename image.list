@@ -1,3 +1,1 @@
-k8s.gcr.io/conformance:v1.19.16
-sonobuoy/sonobuoy:v0.56.3
-sonobuoy/systemd-logs:v0.4
+gcr.io/volterraio/vpm@sha256:6b69a911a7424a903acec362911fb59299ab8e944d1953f14d54f57d7927f71c
