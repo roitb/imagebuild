@@ -8,11 +8,8 @@ gcr.io/kubernetes-e2e-test-images/volume/rbd:1.0.1
 gcr.io/kubernetes-e2e-test-images/apparmor-loader:1.0
 k8s.gcr.io/build-image/debian-iptables:buster-v1.6.5
 gcr.io/kubernetes-e2e-test-images/resource-consumer:1.5
-invalid.com/invalid/alpine:3.1
 gcr.io/kubernetes-e2e-test-images/nautilus:1.0
-docker.io/library/redis:5.0.5-alpine
 k8s.gcr.io/prometheus-dummy-exporter:v0.1.0
-docker.io/library/busybox:1.29
 gcr.io/kubernetes-e2e-test-images/cuda-vector-add:2.0
 gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 gcr.io/kubernetes-e2e-test-images/regression-issue-74839-amd64:1.0
