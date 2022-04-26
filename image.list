@@ -1,5 +1,4 @@
 gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:dfa7f57125160782146bd504ca597a71d3505bd6a0fa047643b68579b2555621
 gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:bcc39b0b372a604630ad1665e6101d5b05872f2caffa8b1a5ad6b49ebadb46d9
 gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:f40c54d216d45d2e5b7cf47780e4730ca71b7717061680689b5f5a0692013d3e
-gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:e3b1632fd7630a851cfc81c001d05016cb8bc3bc0871fcad7b9fe8ec25031
-c05
+gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:e3b1632fd7630a851cfc81c001d05016cb8bc3bc0871fcad7b9fe8ec25031c05
