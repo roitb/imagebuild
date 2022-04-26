@@ -1,3 +1,1 @@
-gcr.io/knative-releases/knative.dev/eventing/cmd/broker/filter@sha256:5aa403b33337105524a9a263f61c2e1b8a71f17c094b28605b245a6121855ac5
-gcr.io/knative-releases/knative.dev/eventing/cmd/broker/ingress@sha256:eafe339d49659b0c2a1e1eb3900ccb59d9b7bdddc35143390120b65b79b6a50a
-gcr.io/knative-releases/knative.dev/eventing/cmd/mtchannel_broker@sha256:66ce36ded086404eb7f283133c860b6c5b5f4b0602d9204bea1f74c9700eb5c5
+gcr.io/knative-releases/knative.dev/eventing/cmd/event_display
